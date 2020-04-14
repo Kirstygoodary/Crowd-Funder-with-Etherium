@@ -72,6 +72,7 @@ describe("Campaigns", () => {
     await campaign.methods
       .contribute()
       .send({ from: accounts[0], value: web3.utils.toWei("10", "ether") });
+
     await campaign.methods
       .createRequest(
         "buy batteries",
