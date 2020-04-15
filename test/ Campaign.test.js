@@ -56,9 +56,9 @@ describe("Campaigns", () => {
       await campaign.methods
         .contribute()
         .send({ value: "5", from: accounts[1] });
-      assert(false);
+      assert(false); // if false then the test will fail
     } catch (err) {
-      assert(err);
+      assert(err); // want to catch the error for it to pass.
     }
   });
   it("allows a manager to make a payment request", async () => {
